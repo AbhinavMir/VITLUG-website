@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+</head>
+<body>
+    <section>
+        Where to join us.
+    </section><br>
+    <section id="events">
+
+    </section>
+
+    <script>
+        var request = new XMLHttpRequest()
+        
+        request.open('GET', 'http://localhost:1337/events', true)
+        request.onload = function() {
+          // Begin accessing JSON data here
+          var data = JSON.parse(this.response)
+    
+          if (request.status >= 200 && request.status < 400) {
+            data.forEach(events => {
+              name=events.name;
+              date=events.date;
+              desc=events.desc;
+              ev=name+"<br>"+date+"<br>"+desc;
+              document.getElementById("events").innerHTML=document.getElementById("events").innerHTML+ev+"<br>"+"<hr>"
+              
+            })
+          } else {
+            console.log('error')
+          }
+
+          
+        }
+        
+        request.send()
+        
+
+        </script>
+
+        
+        
+</body>
+</html>
