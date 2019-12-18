@@ -1,5 +1,5 @@
-body, html {
-  font-family: 'Share Tech Mono', monospace;
+body {
+  font-family: "Share Tech Mono", monospace;
   background-color: #121;
   box-shadow: inset 0 0 200px #020;
   height: 100%;
@@ -9,10 +9,9 @@ body, html {
 }
 
 ::selection {
-  background-color:green;
+  background-color: green;
 }
-a
-{
+a {
   text-decoration: none;
 }
 .visual2 {
@@ -22,7 +21,8 @@ a
   position: relative;
   margin-bottom: 10px;
 }
-.visual2:before, .visual2:after {
+.visual2:before,
+.visual2:after {
   content: "";
   width: 100px;
   height: 100px;
@@ -35,10 +35,10 @@ a
   animation: spin 4s infinite linear;
 }
 
-.visual2:before{
+.visual2:before {
   animation: spin 2s infinite linear;
 }
-.visual2:after{
+.visual2:after {
   animation: spin 4s infinite linear alternate;
 }
 
@@ -50,8 +50,9 @@ a
   margin-bottom: 10px;
 }
 
-.visual1:after, .visual1:before {
-  position:absolute;
+.visual1:after,
+.visual1:before {
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -62,7 +63,7 @@ a
   border-bottom: 1px solid green;
   width: 100%;
   height: 1%;
-  animation: scan 5s infinite  linear;
+  animation: scan 5s infinite linear;
 }
 .visual1:before {
   content: "";
@@ -73,47 +74,65 @@ a
   animation: scan 0.3s infinite alternate linear;
 }
 
-
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Share Tech Mono', monospace;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Share Tech Mono", monospace;
   text-align: center;
   text-transform: uppercase;
   margin: 10px;
   display: block;
   font-weight: bold;
   font-size: 1.1em;
-  float:none;
-  clear:both;
+  float: none;
+  clear: both;
 }
 
-h2:before, h2:after, h1:before, h1:after, h3:before, h3:after {
-  content:" ✱ ✱ ";
+h2:before,
+h2:after,
+h1:before,
+h1:after,
+h3:before,
+h3:after {
+  content: " ✱ ✱ ";
 }
-
 
 /*Gradent Elements*/
-button:hover, hr, img {
-  background: repeating-linear-gradient(0deg, #0c0, #0c0 1px, #050 1px, #050 2px);
-  
-  
+button:hover,
+hr,
+img {
+  background: repeating-linear-gradient(
+    0deg,
+    #0c0,
+    #0c0 1px,
+    #050 1px,
+    #050 2px
+  );
 }
 
 body {
   padding: 20px;
   animation: twitch 0.5s infinite;
-  background: repeating-linear-gradient(0deg, #000, #000 2px, #020 2px, #020 4px);
+  background: repeating-linear-gradient(
+    0deg,
+    #000,
+    #000 2px,
+    #020 2px,
+    #020 4px
+  );
 }
 
 .screen {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   display: flex;
   animation: flicker 0.001s infinite;
   mix-blend-mode: screen;
-  
 }
 
 button {
-  
 }
 
 section {
@@ -121,7 +140,7 @@ section {
 }
 
 button {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
   color: #0f0;
   background: transparent;
   padding: 10px;
@@ -130,10 +149,10 @@ button {
   display: block;
   width: 100%;
   margin: 0 10px 10px 0;
-  outline:none;
-  
+  outline: none;
+
   border: 1px solid #0f0;
-  box-shadow: 0 0 10px rgba(0,255,0,0.5), rgba(0,255,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0.5);
   cursor: pointer;
 }
 
@@ -141,7 +160,7 @@ button:hover {
   animation: flicker2 0.1s infinite alternate;
   color: #000;
   border: 1px solid transparent;
-  box-shadow: 0 0 40px #0A0, inset 0 0 40px #0A0;
+  box-shadow: 0 0 40px #0a0, inset 0 0 40px #0a0;
 }
 
 button:active {
@@ -175,26 +194,29 @@ button:visited {
   position: relative;
   width: 100%;
   background-color: #000;
-  box-shadow: 0 0 80px #0A0, inset 0 0 150px 50px #090;
-  
-  background: repeating-linear-gradient(0deg, #050, #050 1px, #010 1px, #010 2px);
-  
+  box-shadow: 0 0 80px #0a0, inset 0 0 150px 50px #090;
+
+  background: repeating-linear-gradient(
+    0deg,
+    #050,
+    #050 1px,
+    #010 1px,
+    #010 2px
+  );
+
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  
-  
 }
 
 #firstVideo {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: "Share Tech Mono", monospace;
 }
 
 #firstVideo:after {
   content: "";
-  
 }
 
 .imageDisplay:after {
@@ -216,7 +238,6 @@ iframe#iframeVideo {
 }
 
 .buttonGroup {
-  width: 33.3%;
   padding: 0 10px;
 }
 
@@ -224,8 +245,8 @@ iframe#iframeVideo {
   position: relative;
   height: 1em;
   color: #0f0;
-  border-color:#0f0;
-  background-color:#0f0;
+  border-color: #0f0;
+  background-color: #0f0;
 }
 
 .buttonGroup hr:after {
@@ -233,29 +254,28 @@ iframe#iframeVideo {
   position: absolute;
   top: 0;
   left: 0;
-  color:#000;
+  color: #000;
   text-align: center;
   width: 100%;
   z-index: 10;
 }
 
 .bgVideo {
-  top: 50%; 
+  top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  min-width: 100%; 
-  min-height: 100%; 
-  width: auto; 
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
   height: auto;
-  z-index: -1000; 
+  z-index: -1000;
   overflow: hidden;
 }
 
 .bgVideo iframe {
   width: 100%;
   height: 100%;
-  
 }
 
 .buttonGroup p {
@@ -280,10 +300,6 @@ iframe#iframeVideo {
   margin-right: 0;
 }
 
-
-
-
-
 @keyframes flicker {
   0% {
     opacity: 0.8;
@@ -304,7 +320,7 @@ iframe#iframeVideo {
 
 @keyframes spin {
   0% {
-    transform: rotate3d(0,1,1,360deg);;
+    transform: rotate3d(0, 1, 1, 360deg);
   }
   100% {
     transform: rotate3d(360deg);
@@ -339,12 +355,11 @@ iframe#iframeVideo {
 }
 
 @media screen and (max-width: 700px) {
-  
-     .screen {
-        display: block;
-    }
-    .buttonGroup {
-      width: auto;
-      padding: 0 10px;
-    }
+  .screen {
+    display: block;
+  }
+  .buttonGroup {
+    width: auto;
+    padding: 0 10px;
+  }
 }
