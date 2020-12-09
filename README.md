@@ -27,6 +27,8 @@ Possible solutions:-
 
 *Please note*: I used some templates for the terminal style development as well, but it is currently too morphed for me to trace back. This project is open sourced, if you find some of the original components, please inform Abhinav/Nishal.
 
+<hr>
+
 Copyright 2019 VIT Linux User Group
 
    Licensed under the Apache License, Version 2.0 (the "License");
